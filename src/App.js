@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 
-const Form = ({fields, onSubmit, ButtonTitle }) => {
+const Form = ({ fields, onSubmit, ButtonTitle }) => {
   const [errors, setErrors] = useState({});
   const [formData, setFormData] = useState({});
 
