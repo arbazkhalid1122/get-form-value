@@ -1,4 +1,6 @@
-import './index.css';
-import Form from './App';
-
-export default Form;
+import Form from "./App";
+var index_default = Form;
+export {
+  Form,
+  index_default as default
+};
