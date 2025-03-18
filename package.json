@@ -1,6 +1,6 @@
 {
   "name": "get-form-values",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "type": "module",
   "description": "A reusable form component",
   "main": "index.js",
