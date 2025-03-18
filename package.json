@@ -1,6 +1,6 @@
 {
   "name": "get-form-values",
-  "version": "0.1.21",
+  "version": "0.1.23",
   "description": "A reusable form component for React",
   "main": "dist/index.js",
   "module": "dist/index.js",

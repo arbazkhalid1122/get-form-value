@@ -78,7 +78,7 @@ var Form = function Form(_ref) {
     }
   };
   return /*#__PURE__*/_react["default"].createElement("div", _extends({
-    className: "main-div ".concat(className || ''),
+    className: "form-container ".concat(className || ''),
     style: style
   }, props), /*#__PURE__*/_react["default"].createElement("form", {
     className: "styled-form",
@@ -101,7 +101,9 @@ var Form = function Form(_ref) {
   }), /*#__PURE__*/_react["default"].createElement("button", {
     type: "submit",
     className: "submit-button"
-  }, buttonTitle)));
+  }, buttonTitle)), /*#__PURE__*/_react["default"].createElement("style", {
+    jsx: true
+  }, "\n                .form-container {\n                    max-width: 400px;\n                    margin: 20px auto;\n                    padding: 20px;\n                    background: #ffffff;\n                    border-radius: 10px;\n                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);\n                    transition: transform 0.3s ease-in-out;\n                }\n\n                .form-container:hover {\n                    transform: translateY(-2px);\n                }\n\n                .styled-form {\n                    display: flex;\n                    flex-direction: column;\n                    gap: 15px;\n                }\n\n                .form-group {\n                    display: flex;\n                    flex-direction: column;\n                }\n\n                label {\n                    font-size: 14px;\n                    font-weight: 600;\n                    margin-bottom: 5px;\n                    color: #333;\n                }\n\n                .form-control {\n                    padding: 10px;\n                    border-radius: 6px;\n                    border: 1px solid #ccc;\n                    font-size: 14px;\n                    transition: border 0.3s ease-in-out;\n                }\n\n                .form-control:focus {\n                    border-color: #007bff;\n                    outline: none;\n                    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);\n                }\n\n                .error {\n                    border-color: #dc3545;\n                }\n\n                .error-text {\n                    color: #dc3545;\n                    font-size: 12px;\n                    margin-top: 5px;\n                }\n\n                .submit-button {\n                    background: #007bff;\n                    color: white;\n                    padding: 10px;\n                    border: none;\n                    border-radius: 6px;\n                    font-size: 16px;\n                    cursor: pointer;\n                    transition: background 0.3s ease-in-out;\n                }\n\n                .submit-button:hover {\n                    background: #0056b3;\n                }\n            "));
 };
 Form.propTypes = {
   fields: _propTypes["default"].arrayOf(_propTypes["default"].shape({

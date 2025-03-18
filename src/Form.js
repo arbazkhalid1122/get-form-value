@@ -42,7 +42,7 @@ const Form = ({ fields, onSubmit, buttonTitle, className, style, ...props }) => 
     };
 
     return (
-        <div className={`main-div ${className || ''}`} style={style} {...props}>
+        <div className={`form-container ${className || ''}`} style={style} {...props}>
             <form className="styled-form" onSubmit={handleSubmit}>
                 {fields.map((field) => (
                     <div key={field.name} className="form-group">
@@ -61,6 +61,79 @@ const Form = ({ fields, onSubmit, buttonTitle, className, style, ...props }) => 
                     {buttonTitle}
                 </button>
             </form>
+
+            <style jsx>{`
+                .form-container {
+                    max-width: 400px;
+                    margin: 20px auto;
+                    padding: 20px;
+                    background: #ffffff;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                    transition: transform 0.3s ease-in-out;
+                }
+
+                .form-container:hover {
+                    transform: translateY(-2px);
+                }
+
+                .styled-form {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                }
+
+                .form-group {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                label {
+                    font-size: 14px;
+                    font-weight: 600;
+                    margin-bottom: 5px;
+                    color: #333;
+                }
+
+                .form-control {
+                    padding: 10px;
+                    border-radius: 6px;
+                    border: 1px solid #ccc;
+                    font-size: 14px;
+                    transition: border 0.3s ease-in-out;
+                }
+
+                .form-control:focus {
+                    border-color: #007bff;
+                    outline: none;
+                    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+                }
+
+                .error {
+                    border-color: #dc3545;
+                }
+
+                .error-text {
+                    color: #dc3545;
+                    font-size: 12px;
+                    margin-top: 5px;
+                }
+
+                .submit-button {
+                    background: #007bff;
+                    color: white;
+                    padding: 10px;
+                    border: none;
+                    border-radius: 6px;
+                    font-size: 16px;
+                    cursor: pointer;
+                    transition: background 0.3s ease-in-out;
+                }
+
+                .submit-button:hover {
+                    background: #0056b3;
+                }
+            `}</style>
         </div>
     );
 };
