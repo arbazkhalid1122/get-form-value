@@ -1,10 +1,14 @@
 {
   "name": "get-form-values",
-  "version": "0.1.3",
+  "version": "1.0.10",
+  "type": "module",
+  "description": "A reusable form component",
   "main": "index.js",
   "module": "index.js",
-  "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+  "author": "Your Name",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^17.0.2 || ^18.0.0",
+    "react-dom": "^17.0.2 || ^18.0.0"
   }
 }
