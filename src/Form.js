@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
 
 const Form = ({ fields, onSubmit, buttonTitle, className, style, ...props }) => {
     const [errors, setErrors] = useState({});
@@ -136,21 +135,6 @@ const Form = ({ fields, onSubmit, buttonTitle, className, style, ...props }) => 
             `}</style>
         </div>
     );
-};
-
-Form.propTypes = {
-    fields: PropTypes.arrayOf(
-        PropTypes.shape({
-            name: PropTypes.string.isRequired,
-            label: PropTypes.string.isRequired,
-            type: PropTypes.string,
-            placeholder: PropTypes.string,
-        })
-    ).isRequired,
-    onSubmit: PropTypes.func.isRequired,
-    buttonTitle: PropTypes.string.isRequired,
-    className: PropTypes.string,  // Allow custom class names
-    style: PropTypes.object,       // Allow custom styles
 };
 
 export default Form;

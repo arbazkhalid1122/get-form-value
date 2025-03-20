@@ -1,9 +1,13 @@
 {
   "name": "get-form-values",
-  "version": "0.1.23",
+  "version": "0.1.24",
   "description": "A reusable form component for React",
   "main": "dist/index.js",
   "module": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arbazkhalid1122/get-form-value"
+  },
   "scripts": {
     "build": "babel src --out-dir dist",
     "prepare": "npm run build"
@@ -11,9 +15,6 @@
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0",
     "react-dom": "^17.0.0 || ^18.0.0"
-  },
-  "dependencies": {
-    "prop-types": "^15.8.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.26.4",
